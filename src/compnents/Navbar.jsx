@@ -39,7 +39,7 @@ const Navbar = () => {
       </div>
       
       {/* Mobile menu */}
-      <div className={`md:hidden ${isOpen ? 'block flex flex-col justify-center items-center' : 'hidden'} transition-transform transform ${isOpen ? 'translate-y-0' : '-translate-y-full'} duration-500 ease-in-out`}>
+      <div className={`md:hidden ${isOpen ? 'block  flex-col justify-center items-center' : 'hidden'} transition-transform transform ${isOpen ? 'translate-y-0' : '-translate-y-full'} duration-500 ease-in-out`}>
         <a href="#home" className="block px-4 py-2 hover:bg-orange-500 transition-colors duration-300 w-full text-center">Home</a>
         <a href="#about" className="block px-4 py-2 hover:bg-orange-500 transition-colors duration-300 w-full text-center">About</a>
         <a href="#projects" className="block px-4 py-2 hover:bg-orange-500 transition-colors duration-300 w-full text-center">Projects</a>
