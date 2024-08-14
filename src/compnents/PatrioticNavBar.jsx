@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const NavBar = () => {
+const PatrioticNavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -15,7 +15,7 @@ const NavBar = () => {
             MyPatrioticSite
           </a>
         </div>
-        <div className="hidden md:flex space-x-8   ">
+        <div className="hidden md:flex space-x-8">
           <a href="#home" className="hover:text-orange-400 transition-colors duration-300">
             Home
           </a>
@@ -39,7 +39,7 @@ const NavBar = () => {
       </div>
       
       {/* Mobile menu */}
-      <div className={`md:hidden ${isOpen ? 'block  flex-col justify-center items-center' : 'hidden'} transition-transform transform ${isOpen ? 'translate-y-0' : '-translate-y-full'} duration-500 ease-in-out`}>
+      <div className={`md:hidden ${isOpen ? 'block flex-col justify-center items-center' : 'hidden'} transition-transform transform ${isOpen ? 'translate-y-0' : '-translate-y-full'} duration-500 ease-in-out`}>
         <a href="#home" className="block px-4 py-2 hover:bg-orange-500 transition-colors duration-300 w-full text-center">Home</a>
         <a href="#about" className="block px-4 py-2 hover:bg-orange-500 transition-colors duration-300 w-full text-center">About</a>
         <a href="#projects" className="block px-4 py-2 hover:bg-orange-500 transition-colors duration-300 w-full text-center">Projects</a>
@@ -49,4 +49,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default PatrioticNavBar;
