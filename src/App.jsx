@@ -1,12 +1,10 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import Flag from './compnents/Flag'
-import Footer from './compnents/Footer'
-import HomePage from './compnents/HomePage'
-import Navbar from './compnents/NavBar'
-import VideoPlayer from './compnents/VideoPlayer'
+import Footer from './compnents/Footer.jsx'
+import HomePage from './compnents/HomePage.jsx'
+import VideoPlayer from './compnents/VideoPlayer.jsx'
+import NavBar from './compnents/NavBar.jsx'
+
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +12,7 @@ function App() {
   return (
     <>
     <div className=' w-full bg-gradient-to-r from-[#FF9933] via-white to-[#138808] overflow-x-auto'> 
-      <Navbar />
+      <NavBar />
       <div className=' w-full bg-gradient-to-r from-[#FF9933] via-white to-[#138808]'> 
         <HomePage />
         <VideoPlayer />
