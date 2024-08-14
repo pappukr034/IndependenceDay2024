@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Flag from './Flag'; // Assuming you have a Flag component
 import Confetti from 'react-confetti';
 import flag from '../assets/flag.mp4'
+import pappuNavLogo from '../assets/pappuNavLogo.jpg'
 
 const HomePage = () => {
   const [magic, setMagic] = useState(false);
@@ -14,7 +15,7 @@ const HomePage = () => {
   return (
     <div className="flex py-4 overflow-x-auto px-3 flex-col items-center justify-center  bg-blue-50 bg-gradient-to-r from-[#FF9933] via-white to-[#138808]">
       <h1 className="text-4xl md:text-6xl mt-5 text-gray-800 mb-8  text-center font-bold  ">
-      ❤️ Welcome to the Independence Day Celebration! 🇮🇳
+      ❤️ Welcome to the Independence Day Celebration!
       </h1>
 
       <div className="mt-8 flex justify-center items-center">
@@ -41,7 +42,13 @@ const HomePage = () => {
         <div className="absolute inset-0 flex items-center justify-center z-50 px-4 top-16 ">
           <div className='flex flex-col justify-center items-center'>
           <Flag />
-          <h1 className=' text-4xl md:text-6xl font-bold text-center p-4 bg-green-400 rounded-lg  '>❤️ Happy Independence Day 2024 ✨</h1>
+          <div className=' bg-orange-400 rounded-xl p-2 border border-white'>
+            <h1 className=' text-4xl md:text-6xl font-bold text-center p-4 bg-green-400 rounded-lg  '>❤️ Happy Independence Day 2024 ✨</h1>
+            <div className=' flex items-center gap-2'>
+                <img className=' rounded-full' src={pappuNavLogo} alt="pappu photo" width={60} />
+                <p className=' text-xl font-bold text-white'>--Pappu Kumar</p>
+            </div>
+          </div>
           </div>
           <Confetti width={window.innerWidth} height={window.innerHeight} colors={['#FF9933', '#FFFFFF', '#138808']} />
         </div>
